@@ -1,0 +1,14 @@
+; Engine configuration file.
+; Godot 4 project for Mice Invaders.
+config_version=5
+
+[application]
+config/name="Mice Invaders"
+run/main_scene="res://scenes/Main.tscn"
+
+[display]
+window/size/viewport_width=960
+window/size/viewport_height=540
+
+[rendering]
+renderer/rendering_method="gl_compatibility"

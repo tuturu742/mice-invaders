@@ -1,9 +1,12 @@
 ; Mice Invaders -- a scaffold.
 ;
-; Minimal on purpose: no main scene yet, because the first thing worth building is the
-; pure rules -- formation layout, how the swarm marches and drops, how it speeds up -- and
-; those need no scene at all. A delegated agent adds `run/main_scene` once there is
-; something to run.
+; Minimal on purpose: no main scene yet. A delegated agent builds the pure rules first --
+; formation layout, how the swarm marches and drops, how it speeds up -- then a scene that
+; plays them, and sets `run/main_scene` once there is something to run.
+;
+; export_presets.cfg already has a "Web" preset (no thread support, so the build runs from
+; any static file server), which is what turns a green branch into a playable preview:
+;   godot --headless --export-release Web build/web/index.html
 
 config_version=5
 

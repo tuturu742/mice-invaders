@@ -107,10 +107,10 @@ func _fire() -> void:
 
 
 func _check_collisions() -> void:
-	var positions := formation.positions()
 	for si in range(shots.size() - 1, -1, -1):
 		var s: Vector2 = shots[si]
 		var hit := -1
+		var positions := formation.positions()
 		for mi in positions.size():
 			if s.distance_to(positions[mi]) < MOUSE_RADIUS + SHOT_RADIUS:
 				hit = mi

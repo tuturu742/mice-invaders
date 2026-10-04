@@ -13,6 +13,7 @@ config_version=5
 [application]
 
 config/name="Mice Invaders"
+run/main_scene="res://scenes/main.tscn"
 config/description="Space Invaders, except the player is a cat and the invaders are mice."
 config/features=PackedStringArray("4.3", "GL Compatibility")
 
